@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hamlet Comic Story</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fog-overlay"></div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hamlet Comic Story</h1>
+            <p>A dark interactive comic based on William Shakespeare's tragedy.</p>
+            <button class="btn primary-btn" id="startStoryBtn">Start Story</button>
+        </div>
+    </header>
+
+    <main>
+        <nav class="top-nav">
+            <button class="btn nav-btn" id="backBtn">Back</button>
+            <div class="scene-indicator">
+                <span id="currentScene">1</span> / <span id="totalScenes">9</span>
+            </div>
+            <button class="btn nav-btn" id="nextBtn">Next</button>
+        </nav>
+
+        <section class="comic-container">
+
+            <!-- Scene 1: King's Ghost -->
+            <section class="comic-panel" id="scene-1" data-scene="1">
+                <div class="panel-inner">
+                    <div class="panel-image ghost-king">
+                        <div class="image-overlay"></div>
+                        <span class="panel-label">King's Ghost</span>
+                    </div>
+                    <div class="panel-text">
+                        <h2>King's Ghost</h2>
+                        <p>
+                            In the night mist on the walls of Elsinore, the ghost of the dead king appears. 
+                            He reveals a terrible truth to Hamlet: he was killed by his own brother.
+                        </p>
+                        <button class="btn dialog-btn" data-dialog="dialog-1">
+                            Dialog
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scene 2: Hamlet's Grief -->
+            <section class="comic-panel" id="scene-2" data-scene="2">
+                <div class="panel-inner">
+                    <div class="panel-image hamlet-sad">
+                        <div class="image-overlay"></div>
+                        <span class="panel-label">Hamlet's Grief</span>
+                    </div>
+                    <div class="panel-text">
+                        <h2>Hamlet's Grief</h2>
+                        <p>
+                            Hamlet is torn between mourning his father, disgust at his mother's hasty marriage, 
+                            and hatred for the new king.
+                        </p>
+                        <button class="btn dialog-btn" data-dialog="dialog-2">
+                            Dialog
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scene 3: "To Be or Not to Be" -->
+            <section class="comic-panel" id="scene-3" data-scene="3">
+                <div class="panel-inner">
+                    <div class="panel-image to-be">
+                        <div class="image-overlay"></div>
+                        <span class="panel-label">"To Be or Not to Be"</span>
+                    </div>
+                    <div class="panel-text">
+                        <h2>"To Be or Not to Be"</h2>
+                        <p>
+                            Hamlet contemplates the meaning of life and death, suffering and fear of the unknown.
+                        </p>
+                        <button class="btn dialog-btn" data-dialog="dialog-3">
+                            Monologue
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scene 4: The Mousetrap Play -->
+            <section class="comic-panel" id="scene-4" data-scene="4">
+                <div class="panel-inner">
+                    <div class="panel-image play-trap">
+                        <div class="image-overlay"></div>
+                        <span class="panel-label">The Mousetrap Play</span>
+                    </div>
+                    <div class="panel-text">
+                        <h2>The Mousetrap Play</h2>
+                        <p>
+                            Hamlet stages a play that recreates the king's murder to expose Claudius's reaction.
+                        </p>
+                        <button class="btn dialog-btn" data-dialog="dialog-4">
+                            Dialog
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scene 5: Polonius's Death -->
+            <section class="comic-panel" id="scene-5" data-scene="5">
+                <div class="panel-inner">
+                    <div class="panel-image polonius">
+                        <div class="image-overlay"></div>
+                        <span class="panel-label">Polonius's Death</span>
+                    </div>
+                    <div class="panel-text">
+                        <h2>Polonius's Death</h2>
+                        <p>
+                            While eavesdropping, Polonius is killed by Hamlet, who mistakes him for the king.
+                        </p>
+                        <button class="btn dialog-btn" data-dialog="dialog-5">
+                            Dialog
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scene 6: Ophelia's Madness -->
+            <section class="comic-panel" id="scene-6" data-scene="6">
+                <div class="panel-inner">
+                    <div class="panel-image ophelia">
+                        <div class="image-overlay"></div>
+                        <span class="panel-label">Ophelia's Madness</span>
+                    </div>
+                    <div class="panel-text">
+                        <h2>Ophelia's Madness</h2>
+                        <p>
+                            The loss of her father and her love drive Ophelia to despair. She drowns in the water, leaving only songs behind.
+                        </p>
+                        <button class="btn dialog-btn" data-dialog="dialog-6">
+                            Dialog
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scene 7: Ophelia's Funeral -->
+            <section class="comic-panel" id="scene-7" data-scene="7">
+                <div class="panel-inner">
+                    <div class="panel-image ophelia-funeral">
+                        <div class="image-overlay"></div>
+                        <span class="panel-label">Ophelia's Funeral</span>
+                    </div>
+                    <div class="panel-text">
+                        <h2>Ophelia's Funeral</h2>
+                        <p>
+                            Ophelia is laid to rest. Laertes breaks with grief. Hamlet admits her love and vows to avenge her. A mournful ceremony filled with sorrow and rage.
+                        </p>
+                        <button class="btn dialog-btn" data-dialog="dialog-7-funeral">
+                            Dialog
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scene 8: The Duel -->
+            <section class="comic-panel" id="scene-8" data-scene="8">
+                <div class="panel-inner">
+                    <div class="panel-image duel">
+                        <div class="image-overlay"></div>
+                        <span class="panel-label">The Duel</span>
+                    </div>
+                    <div class="panel-text">
+                        <h2>The Duel</h2>
+                        <p>
+                            Hamlet challenges Laertes to a duel. Poisoned blades flash as the king and queen watch anxiously. The battle becomes fierce and merciless.
+                        </p>
+                        <button class="btn dialog-btn" data-dialog="dialog-8">
+                            Dialog
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scene 9: Death -->
+            <section class="comic-panel" id="scene-9" data-scene="9">
+                <div class="panel-inner">
+                    <div class="panel-image death-final">
+                        <div class="image-overlay"></div>
+                        <span class="panel-label">Death</span>
+                    </div>
+                    <div class="panel-text">
+                        <h2>Death</h2>
+                        <p>
+                            The poison does its work. The king, queen, and Laertes fall. With his last breath, Hamlet asks Horatio to tell his story. Elsinore falls into the shadow of death.
+                        </p>
+                        <button class="btn dialog-btn" data-dialog="dialog-9">
+                            Monologue
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <!-- Модальне вікно діалогів -->
+    <div class="dialog-modal" id="dialogModal">
+        <div class="dialog-content">
+            <button class="dialog-close" id="dialogClose">&times;</button>
+            <div id="dialogText"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Based on Shakespeare's Hamlet</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
