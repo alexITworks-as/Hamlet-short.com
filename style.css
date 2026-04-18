@@ -272,27 +272,27 @@ body {
 
 /* Real scene images from img folder */
 .ghost-king {
-    background-image: url('../img/1.png');
+    background-image: url('img/1.png');
 }
 
 .hamlet-sad {
-    background-image: url('../img/2.png');
+    background-image: url('img/2.png');
 }
 
 .to-be {
-    background-image: url('../img/3.jpeg');
+    background-image: url('img/3.jpeg');
 }
 
 .play-trap {
-    background-image: url('../img/6.jpeg');
+    background-image: url('img/6.jpeg');
 }
 
 .polonius {
-    background-image: url('../img/7.jpeg');
+    background-image: url('img/7.jpeg');
 }
 
 .ophelia {
-    background-image: url('../img/10.jpeg');
+    background-image: url('img/10.jpeg');
 }
 
 .ophelia-funeral {
@@ -300,11 +300,11 @@ body {
 }
 
 .duel {
-    background-image: url('../img/8.png');
+    background-image: url('img/8.png');
 }
 
 .death-final {
-    background-image: url('../img/9.png');
+    background-image: url('img/9.png');
 }
 
 
